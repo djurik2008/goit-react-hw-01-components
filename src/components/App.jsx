@@ -1,8 +1,10 @@
+import UserProfile from "./Profile/UserProfile";
+import user from "../UserData/user"
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        height: '45vw',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -10,7 +12,15 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+      <UserProfile
+  username={user.username}
+  tag={user.tag}
+  location={user.location}
+  avatar={user.avatar}
+  stats={user.stats}
+/>
     </div>
   );
 };
+
+console.log(user)
