@@ -4,16 +4,7 @@ import user from '../Data/userData';
 import statisticsData from '../Data/statisticsData';
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '45vw',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
+    <div>
       <UserProfile
         username={user.username}
         tag={user.tag}
