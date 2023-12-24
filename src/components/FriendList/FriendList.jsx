@@ -9,7 +9,6 @@ const FriendList = ({ friendsData }) => {
             avatar={avatar}
             name={name}
             isOnline={isOnline}
-            id={id}
             key={id}
           />
         ))}

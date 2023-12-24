@@ -1,7 +1,7 @@
 const TransactionHistoryItem = props => {
-  const { id, type, amount, currency } = props;
+  const { type, amount, currency } = props;
   return (
-    <tr key={id}>
+    <tr>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
